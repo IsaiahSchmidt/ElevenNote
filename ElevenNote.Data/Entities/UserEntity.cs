@@ -10,4 +10,5 @@ public class UserEntity : IdentityUser<int>
     public string? LastName {get; set;}
     [Required]
     public DateTime DateCreated {get; set;}
+    public List<NoteEntity> Notes {get; set;} = new();
 }
