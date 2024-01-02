@@ -58,6 +58,7 @@ namespace ElevenNote.WebApi.Controllers
         }
 
         //PUT api/Note
+        [HttpPut]
         public async Task<IActionResult> UpdateNoteById([FromBody] NoteUpdate request)
         {
             if (!ModelState.IsValid)
